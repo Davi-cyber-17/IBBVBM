@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IBBVBM — Igreja Batista Bíblica Vila Brasílio Machado</title>
+  <meta name="description" content="Igreja Batista Bíblica Vila Brasílio Machado — um lugar para adorar, aprender a Palavra de Deus e crescer em comunhão.">
+
+  <!-- Tipografia: serifada de destaque + sans-serif de leitura -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#topo" class="brand" aria-label="IBBVBM — página inicial">
+        <img src="logo.png" alt="Logo da Igreja Batista Bíblica Vila Brasílio Machado" class="brand__logo">
+        <span class="brand__text">
+          <strong class="brand__initials">IBBVBM</strong>
+          <span class="brand__full">Igreja Batista Bíblica<br>Vila Brasílio Machado</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <ul class="nav__list" id="navList">
+          <li><a href="#inicio" class="nav__link">Início</a></li>
+          <li><a href="#sobre" class="nav__link">Sobre a Igreja</a></li>
+          <li><a href="#ministerios" class="nav__link">Ministérios</a></li>
+          <li><a href="#avisos" class="nav__link">Avisos</a></li>
+          <li><a href="#calendario" class="nav__link">Calendário</a></li>
+          <li><a href="#oracao" class="nav__link">Pedidos de Oração</a></li>
+          <li><a href="#missionarios" class="nav__link">Missionários</a></li>
+          <li><a href="#oferta" class="nav__link">Oferta</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="topo">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero__arch" aria-hidden="true">
+        <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg" class="hero__arch-svg">
+          <path d="M60 320 L60 150 L300 20 L540 150 L540 320" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="300" cy="60" r="4" fill="currentColor"/>
+        </svg>
+      </div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">Igreja Batista Bíblica Vila Brasílio Machado</p>
+        <h1 class="hero__title">Bem-vindo à<br><span>IBBVBM</span></h1>
+        <p class="hero__subtitle">"Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna."<br><strong>— João 3:16</strong></p>
+        <div class="hero__actions">
+          <a href="#sobre" class="btn btn--primary">Saiba mais</a>
+          <a href="#oracao" class="btn btn--secondary">Pedir Oração</a>
+        </div>
+      </div>
+      <a href="#sobre" class="scroll-hint" aria-hidden="true">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="about" id="sobre">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Sobre a igreja</p>
+        <h2 class="section-title reveal">Uma família reunida em torno da Palavra</h2>
+        <div class="about__grid">
+          <p class="about__text reveal">
+            A Igreja Batista Bíblica Vila Brasílio Machado é uma comunidade de fé dedicada ao
+            ensino fiel das Escrituras, à adoração sincera e ao cuidado mútuo entre irmãos.
+            Cremos que a igreja é, antes de tudo, uma família — um espaço onde cada pessoa é
+            bem-vinda para conhecer a Deus, crescer na fé e servir ao próximo com amor.
+          </p>
+          <p class="about__text reveal">
+            Nossa missão é anunciar o evangelho de Jesus Cristo, formar discípulos comprometidos
+            com a Palavra e viver em comunhão prática, dentro e fora dos muros da igreja. Todos os
+            cultos e atividades são abertos à comunidade, sem distinção — o convite é para todos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== MINISTÉRIOS ===== -->
+    <section class="ministries" id="ministerios">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Serviço e Comunhão</p>
+        <h2 class="section-title reveal">Ministérios</h2>
+
+        <div class="ministries__list" id="ministriesGrid">
+          <!-- Grupos gerados via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== AVISOS ===== -->
+    <section class="notices" id="avisos">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Programação</p>
+        <h2 class="section-title reveal">Avisos e horários</h2>
+
+        <div class="notices__grid">
+          <article class="notice-card reveal">
+            <span class="notice-card__day">Domingo</span>
+            <h3 class="notice-card__title">Escola Bíblica Dominical</h3>
+            <p class="notice-card__time">09h00</p>
+          </article>
+          <article class="notice-card reveal">
+            <span class="notice-card__day">Domingo</span>
+            <h3 class="notice-card__title">Culto de Adoração</h3>
+            <p class="notice-card__time">18h30</p>
+          </article>
+          <article class="notice-card reveal">
+            <span class="notice-card__day">Quarta-feira</span>
+            <h3 class="notice-card__title">Reunião de Oração</h3>
+            <p class="notice-card__time">20h00</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== CALENDÁRIO ===== -->
+    <section class="calendar" id="calendario">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow reveal">Calendário</p>
+        <h2 class="section-title reveal">Programação do mês</h2>
+
+        <div class="calendar__widget reveal" id="calendarWidget">
+          <!-- Gerado via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== PEDIDOS DE ORAÇÃO ===== -->
+    <section class="prayer" id="oracao">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow reveal">Apoio Pastoral</p>
+        <h2 class="section-title reveal">Pedido de Oração</h2>
+        <p class="signup__note reveal">Compartilhe conosco o seu pedido. Nossa equipe estará orando por você e por sua família.</p>
+        
+        <form class="form reveal" id="prayerForm">
+          <div class="form__row form__row--split">
+            <div>
+              <label for="prayerName">Nome completo</label>
+              <input type="text" id="prayerName" name="name" placeholder="Seu nome" required>
+            </div>
+            <div>
+              <label for="prayerContact">Telefone / WhatsApp</label>
+              <input type="tel" id="prayerContact" name="contact" placeholder="(11) 99999-9999">
+            </div>
+          </div>
+          <div class="form__row">
+            <label for="prayerMessage">Seu Pedido de Oração</label>
+            <textarea id="prayerMessage" name="message" rows="4" placeholder="Escreva aqui seu pedido..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Enviar Pedido</button>
+          <span class="form__feedback" id="prayerFeedback" role="status" aria-live="polite"></span>
+        </form>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== MISSIONÁRIOS ===== -->
+    <section class="missionaries" id="missionarios">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Até os Confins da Terra</p>
+        <h2 class="section-title reveal">Missionários e Projetos Apoiados</h2>
+        <p class="missionaries__intro reveal">
+          Conheça as famílias e ministérios que nossa igreja sustenta em oração e contribuição financeira em diversos campos no Brasil e no mundo.
+        </p>
+
+        <!-- Relatório do Campo em Destaque -->
+        <div class="missionary-report reveal">
+          <div class="missionary-report__header">
+            <div>
+              <span class="missionary-report__tag">Relatório Atual</span>
+              <h3 class="missionary-report__title">Informativo Trimestral de Missões — 3º Trimestre</h3>
+            </div>
+            <a href="#" class="btn btn--secondary btn--sm" onclick="alert('Download do relatório demonstrativo.'); return false;">Baixar Relatório (PDF)</a>
+          </div>
+          
+          <div class="missionary-report__body">
+            <div class="missionary-report__text">
+              <h4>Destaques do Campo:</h4>
+              <p>Graças às orações e à fidelidade da igreja, no último trimestre tivemos o fortalecimento de 3 novas frentes evangelísticas no Sertão Nordestino e o avanço no trabalho de tradução bíblica no Sudeste Asiático. Além disso, a entrega de cestas básicas e apoio médico atendeu mais de 120 famílias em comunidades vulneráveis.</p>
+              
+              <div class="missionary-report__prayers">
+                <strong>Motivos de Oração:</strong>
+                <ul>
+                  <li>• Saúde física e emocional das famílias missionárias em campos transculturais.</li>
+                  <li>• Proteção e abertura de portas em países de acesso restrito.</li>
+                  <li>• Provisão de recursos para a construção da nova sala de aula comunitária.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="missionary-report__gallery">
+              <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=600&q=80" alt="Atividade comunitária no campo missionário" loading="lazy">
+              <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=600&q=80" alt="Crianças atendidas pelo projeto missionário" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- Lista/Mural de 20 Missionários -->
+        <h3 class="missionaries__subtitle reveal">Nossos 20 Missionários Apoiados</h3>
+        <div class="missionaries__grid" id="missionariesGrid">
+          <!-- Gerado dinamicamente via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== OFERTA ===== -->
+    <section class="offering" id="oferta">
+      <div class="section-inner section-inner--narrow">
+        <p class="eyebrow reveal">Contribua</p>
+        <h2 class="section-title reveal">Oferta e dízimo</h2>
+        <p class="offering__text reveal">
+          Sua contribuição sustenta a obra de Deus e os ministérios da nossa igreja.
+          Ofertar é um ato de adoração e gratidão. Você pode contribuir via Pix,
+          apontando a câmera do aplicativo do seu banco para o QR Code abaixo ou
+          copiando a chave.
+        </p>
+
+        <div class="offering__card reveal">
+          <div class="offering__qr">
+            <img src="" alt="QR Code Pix para oferta à IBBVBM" id="pixQrCode" width="220" height="220">
+          </div>
+
+          <div class="offering__details">
+            <div class="offering__row">
+              <span class="offering__label">Chave Pix</span>
+              <div class="offering__pix-box">
+                <span id="pixKeyText"></span>
+                <button type="button" class="offering__copy-btn" id="copyPixBtn">Copiar</button>
+              </div>
+              <span class="offering__feedback" id="pixCopyFeedback" role="status" aria-live="polite"></span>
+            </div>
+
+            <div class="offering__row">
+              <span class="offering__label">Tipo de chave</span>
+              <span id="pixKeyType"></span>
+            </div>
+
+            <div class="offering__row">
+              <span class="offering__label">Favorecido</span>
+              <span id="pixFavorecido"></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="offering__disclaimer reveal">
+          "Cada um contribua segundo propôs no seu coração; não com tristeza, ou por necessidade; porque Deus ama ao que dá com alegria." — 2 Coríntios 9:7
+        </p>
+      </div>
+    </section>
+
+    <div class="divider" aria-hidden="true"><span></span></div>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="contact" id="contato">
+      <div class="section-inner">
+        <p class="eyebrow reveal">Contato</p>
+        <h2 class="section-title reveal">Venha nos visitar</h2>
+
+        <div class="contact__grid">
+          <ul class="contact__list reveal">
+            <li>
+              <span class="contact__label">Endereço</span>
+              <span>Rua Vila Brasílio Machado — São Paulo, SP</span>
+            </li>
+            <li>
+              <span class="contact__label">Telefone</span>
+              <span>(11) 3456-7890</span>
+            </li>
+            <li>
+              <span class="contact__label">WhatsApp</span>
+              <span>(11) 91234-5678</span>
+            </li>
+            <li>
+              <span class="contact__label">E-mail</span>
+              <span>contato@ibbvbm.org.br</span>
+            </li>
+          </ul>
+
+          <div class="contact__map reveal">
+            <iframe 
+              title="Mapa de localização da igreja"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1975876092047!2d-46.633308!3d-23.55052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAy.a2IgNDbCsDM4JzAwLjAiVw!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" 
+              width="100%" 
+              height="300" 
+              style="border:0; border-radius: var(--radius);" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <img src="logo.png" alt="Logo da Igreja Batista Bíblica Vila Brasílio Machado" class="footer__logo">
+        <p class="footer__name">Igreja Batista Bíblica<br>Vila Brasílio Machado</p>
+      </div>
+
+      <div class="footer__col">
+        <h3>Horários dos cultos</h3>
+        <ul>
+          <li>Domingo — EBD — 9h00</li>
+          <li>Domingo — Culto — 18h30</li>
+          <li>Quarta-feira — Oração — 20h00</li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Redes sociais</h3>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Instagram da IBBVBM">Instagram</a></li>
+          <li><a href="#" aria-label="Facebook da IBBVBM">Facebook</a></li>
+          <li><a href="#" aria-label="YouTube da IBBVBM">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 IBBVBM — Igreja Batista Bíblica Vila Brasílio Machado. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
